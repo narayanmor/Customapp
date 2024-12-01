@@ -1,3 +1,19 @@
 <?xml version="1.0" encoding="UTF-8"?><database>
-    <element db_object_id="f41894d3c3421210405a3e1d0501318a" extends="task" label="Device request" max_length="40" name="x_1550374_techwith_device_request" type="collection"/>
+    <element db_object_id="f41894d3c3421210405a3e1d0501318a" extends="task" label="Device request" max_length="40" name="x_1550374_techwith_device_request" type="collection">
+        <element attributes="edge_encryption_enabled=true" label="Device description" max_length="2000" name="u_string_7" read_only="true" type="string"/>
+        <element attributes="edge_encryption_enabled=true" choice="1" label="State" max_length="40" name="u_string_5" type="string">
+            <choice>
+                <element inactive_on_update="false" label="Deliverable" sequence="0" value="deliverable"/>
+                <element inactive="true" inactive_on_update="true" label="Choice 3" sequence="0" value="Choice 3"/>
+                <element inactive_on_update="false" label="Cancel" sequence="1" value="cancel"/>
+            </choice>
+        </element>
+        <element attributes="encode_utf8=false" label="Device name" mandatory="true" max_length="32" name="u_reference_1" reference="x_1550374_techwith_ai_devices" type="reference"/>
+        <element attributes="encode_utf8=false" label="Requester Name" mandatory="true" max_length="32" name="u_reference_2" reference="sys_user" type="reference"/>
+        <element attributes="omit_sys_original=true,serializer=com.glide.script.PriceXMLSerializer" label="price" max_length="20" name="u_price_8" read_only="true" type="price"/>
+        <element attributes="edge_encryption_enabled=true" label="Model" max_length="40" name="u_string_6" read_only="true" type="string"/>
+        <element attributes="encode_utf8=false" label="Quantity" max_length="32" name="u_reference_3" type="integer"/>
+        <element attributes="edge_encryption_enabled=true" label="Delivery date" max_length="40" name="u_glide_date_4" type="glide_date"/>
+        <element attributes="edge_encryption_enabled=true" label="Warranty expiration" max_length="40" name="u_string_9" read_only="true" type="string"/>
+    </element>
 </database>

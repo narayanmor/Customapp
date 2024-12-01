@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_ui_application">
+    <sys_ui_application action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <hint/>
+        <name>Techwith Pri</name>
+        <order/>
+        <roles>x_1550374_techwith.device_management,x_1550374_techwith.dispatch_management,x_1550374_techwith.release_management.,x_1550374_techwith.end_user</roles>
+        <sys_class_name>sys_ui_application</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-11-29 08:00:07</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>28e304afc3825210405a3e1d0501312c</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Techwith Pri</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="Techwith Pri" source="x_1550374_techwith">33859413c3421210405a3e1d0501312a</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Techwith Pri">33859413c3421210405a3e1d0501312a</sys_scope>
+        <sys_update_name>sys_ui_application_28e304afc3825210405a3e1d0501312c</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-11-29 08:00:07</sys_updated_on>
+    </sys_ui_application>
+</record_update>

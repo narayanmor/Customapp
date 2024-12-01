@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_script_client">
+    <sys_script_client action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <applies_extended>false</applies_extended>
+        <condition/>
+        <description/>
+        <field>u_reference_1</field>
+        <global>true</global>
+        <isolate_script>true</isolate_script>
+        <messages/>
+        <name>Show the section </name>
+        <order/>
+        <script><![CDATA[function onChange(control, oldValue, newValue, isLoading, isTemplate) {
+    if (isLoading || newValue === '') {
+        return;
+    }
+    if (!newValue == '') {
+        g_form.setSectionDisplay('device_details', true);
+        g_form.setSectionDisplay('delivery_details', true);
+
+        g_form.getReference('u_reference_1', getdetails);
+
+
+
+    }
+
+}
+
+function getdetails(details) {
+    g_form.setValue('u_string_6', details.model_number);
+    g_form.setValue('u_string_7', details.short_description);
+    g_form.setValue('u_price_8', details.u_price_2);
+    g_form.setValue('u_string_9', details.warranty_expiration);
+
+}]]></script>
+        <sys_class_name>sys_script_client</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-11-29 10:24:00</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>eaf3e02bc3465210405a3e1d050131f9</sys_id>
+        <sys_mod_count>7</sys_mod_count>
+        <sys_name>Show the section </sys_name>
+        <sys_overrides/>
+        <sys_package display_value="Techwith Pri" source="x_1550374_techwith">33859413c3421210405a3e1d0501312a</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Techwith Pri">33859413c3421210405a3e1d0501312a</sys_scope>
+        <sys_update_name>sys_script_client_eaf3e02bc3465210405a3e1d050131f9</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-11-30 06:27:14</sys_updated_on>
+        <table>x_1550374_techwith_device_request</table>
+        <type>onChange</type>
+        <ui_type>10</ui_type>
+        <view/>
+    </sys_script_client>
+</record_update>
