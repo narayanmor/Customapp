@@ -3,7 +3,7 @@
         <element attributes="edge_encryption_enabled=true" label="Device description" max_length="2000" name="u_string_7" read_only="true" type="string"/>
         <element attributes="edge_encryption_enabled=true" choice="1" label="State" max_length="40" name="u_string_5" type="string">
             <choice>
-                <element inactive_on_update="false" label="Deliverable" sequence="0" value="deliverable"/>
+                <element inactive_on_update="false" label="Delivered" sequence="0" value="deliverable"/>
                 <element inactive="true" inactive_on_update="true" label="Choice 3" sequence="0" value="Choice 3"/>
                 <element inactive_on_update="false" label="Cancel" sequence="1" value="cancel"/>
             </choice>
